@@ -183,9 +183,23 @@ export default function Portfolio() {
   const thumbTransition = { duration: 0.4, ease: "easeOut" };
   const thumbViewport = { once: true, amount: 0.4 };
 
-  const SectionHeading = ({ innerRef, id, children }) => (
-    <h2 id={id} ref={innerRef} className="text-3xl md:text-4xl font-bold mb-6 text-cyan-400 scroll-mt-32 drop-shadow-[0_0_6px_rgba(34,211,238,0.8)]">{children}</h2>
-  );
+interface SectionHeadingProps {
+  innerRef: React.RefObject<HTMLHeadingElement>;
+  id: string;
+  children: React.ReactNode;
+  className?: string;
+}
+
+const SectionHeading: React.FC<SectionHeadingProps> = ({ innerRef, id, children, className }) => (
+  <h2 
+    id={id} 
+    ref={innerRef} 
+    className={`text-3xl md:text-4xl font-bold mb-6 text-cyan-400 scroll-mt-32 drop-shadow-[0_0_6px_rgba(34,211,238,0.8)] ${className || ''}`}
+  >
+    {children}
+  </h2>
+);
+
 
   return (
     <div className="relative bg-gray-900 text-gray-100 min-h-screen overflow-x-hidden font-[Calibri]" style={{ backgroundImage: `url(${bgUrl.src})`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center', fontFamily: 'Calibri, sans-serif' }}>
