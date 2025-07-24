@@ -8,11 +8,11 @@ import { Linkedin, Github, Mail, FileText } from "lucide-react";
 import bgImage from "@/assets/pcb.png";
 
 export default function Portfolio() {
-  const aboutRef = useRef(null);
-  const skillsRef = useRef(null);
-  const experienceRef = useRef(null);
-  const projectsRef = useRef(null);
-  const contactRef = useRef(null);
+  const aboutRef = useRef<HTMLHeadingElement>(null);
+  const skillsRef = useRef<HTMLHeadingElement>(null);
+  const experienceRef = useRef<HTMLHeadingElement>(null);
+  const projectsRef = useRef<HTMLHeadingElement>(null);
+  const contactRef = useRef<HTMLHeadingElement>(null);
 
   const [showTop, setShowTop] = useState(false);
   const [yearsExperience, setYearsExperience] = useState(16);
@@ -78,7 +78,7 @@ export default function Portfolio() {
     return header ? header.offsetHeight + 16 : 96;
   };
 
-  const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
+  const scrollToSection = (ref: React.RefObject<HTMLHeadingElement>) => {
     if (ref?.current) {
       const offset = headerHeight + 16; // 16px breathing room
       const top = ref.current.getBoundingClientRect().top + window.scrollY - offset;
@@ -184,7 +184,7 @@ export default function Portfolio() {
   const thumbViewport = { once: true, amount: 0.4 };
 
 interface SectionHeadingProps {
-  innerRef: React.RefObject<HTMLHeadingElement>;
+  innerRef: React.RefObject<HTMLHeadingElement | null>;
   id: string;
   children: React.ReactNode;
   className?: string;
