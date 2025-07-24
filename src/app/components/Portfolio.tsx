@@ -336,10 +336,10 @@ export default function Portfolio() {
                 <a href="https://github.com/karllagman" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Github className="h-8 w-8" /></a>
               </div>
               <div className="mt-6 text-sm text-gray-300">
-                <a href="/Karl_Anthony_Lagman_Resume.pdf" target="_blank" rel="noopener noreferrer" className={pdfButtonStyle}>
+                <a href="https://github.com/karllagman/karl-portfolio/tree/master/public/karl_lagman_cv.pdf" target="_blank" rel="noopener noreferrer" className={pdfButtonStyle}>
                   <FileText className="h-5 w-5" /> <span>View PDF Resume</span>
                 </a>
-                <p className="mt-2 text-xs text-gray-400">PDF ~1.2 MB • Right-click and choose "Save As" to download.</p>
+                <p className="mt-2 text-xs text-gray-400">PDF ~1.2 MB • Right-click and choose &quot;Save As&quot; to download.</p>
               </div>
             </CardContent>
           </Card>
