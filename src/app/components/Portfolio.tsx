@@ -78,7 +78,7 @@ export default function Portfolio() {
     return header ? header.offsetHeight + 16 : 96;
   };
 
-  const scrollToSection = (ref: React.RefObject<HTMLHeadingElement>) => {
+  const scrollToSection = (ref: React.RefObject<HTMLHeadingElement | null>) => {
     if (ref?.current) {
       const offset = headerHeight + 16; // 16px breathing room
       const top = ref.current.getBoundingClientRect().top + window.scrollY - offset;
