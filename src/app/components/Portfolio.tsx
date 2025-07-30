@@ -168,7 +168,7 @@ export default function Portfolio() {
   const defaultThumbnail = "https://static-cse.canva.com/blob/1808021/create_youtube-thumbnails_lead4x.1db8ba01.avif";
   const projects = [
     { name: "Loan Management System", description: "A lightweight and user-friendly web application to manage loans, clients, and payments — perfect for personal lending, microfinance, or small business use.", thumbnail: "/lms.PNG", github: "https://github.com/karllagman/app-lms-standalone", tech: ["Java", "Spring Boot", "JPA", "MySQL", "Thymeleaf", "JQuery", "Bootstrap"] },
-    { name: "Portfolio Website", description: "A personal portfolio built with React, Tailwind CSS, and Next.js showcasing my experience and skills.", thumbnail: "/portfolio.PNG", link: "#", github: "https://github.com/karllagman/portfolio", tech: ["React", "Next.js", "Tailwind CSS"] }
+    { name: "Portfolio Website", description: "A personal portfolio built with React, Tailwind CSS, and Next.js showcasing my experience and skills.", thumbnail: "/portfolio.PNG", link: "#", github: "https://github.com/karllagman/karl-portfolio", tech: ["React", "Next.js", "Tailwind CSS"] }
   ];
 
   const fadeIn = { hidden: { opacity: 0, y: 10 }, visible: (i = 1) => ({ opacity: 1, y: 0, transition: { delay: i * 0.1, duration: 0.3 } }) };
@@ -218,7 +218,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({ innerRef, id, children,
             <Button className={buttonHover} onClick={() => scrollToSection(contactRef)}>Contact</Button>
           </div>
           <div className="flex space-x-4 mt-2">
-            <a href="mailto:karl.lagman@yahoo.com" aria-label="Email" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Mail className="h-6 w-6" /></a>
+            <a href="mailto:karl.lagman.dev@gmail.com" aria-label="Email" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Mail className="h-6 w-6" /></a>
             <a href="https://www.linkedin.com/in/karl-anthony-lagman-9305b613a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Linkedin className="h-6 w-6" /></a>
             <a href="https://github.com/karllagman" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Github className="h-6 w-6" /></a>
           </div>
@@ -342,10 +342,10 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({ innerRef, id, children,
           <SectionHeading innerRef={contactRef} id="contact">Contact</SectionHeading>
           <Card className="bg-gray-800 p-6">
             <CardContent className="text-center">
-              <p>Email: <a className="text-cyan-400" href="mailto:karl.lagman@yahoo.com">karl.lagman@yahoo.com</a></p>
+              <p>Email: <a className="text-cyan-400" href="mailto:karl.lagman.dev@gmail.com">karl.lagman.dev@gmail.com</a></p>
               <p>Phone: +63 906 066 9908</p>
               <div className="flex justify-center items-center space-x-6 mt-4">
-                <a href="mailto:karl.lagman@yahoo.com" aria-label="Email" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Mail className="h-8 w-8" /></a>
+                <a href="mailto:karl.lagman.dev@gmail.com" aria-label="Email" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Mail className="h-8 w-8" /></a>
                 <a href="https://www.linkedin.com/in/karl-anthony-lagman-9305b613a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Linkedin className="h-8 w-8" /></a>
                 <a href="https://github.com/karllagman" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Github className="h-8 w-8" /></a>
               </div>
