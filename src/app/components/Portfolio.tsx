@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
-import { Linkedin, Github, Mail, FileText, Phone, MessageCircle } from "lucide-react";
+import { Linkedin, Github, Mail, FileText } from "lucide-react";
 import bgImage from "@/assets/pcb.png";
 
 export default function Portfolio() {
@@ -221,8 +221,6 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({ innerRef, id, children,
             <a href="mailto:karl.lagman.dev@gmail.com" aria-label="Email" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Mail className="h-6 w-6" /></a>
             <a href="https://www.linkedin.com/in/karl-anthony-lagman-9305b613a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Linkedin className="h-6 w-6" /></a>
             <a href="https://github.com/karllagman" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Github className="h-6 w-6" /></a>
-            <a href="viber://chat?number=%2B639060669908" target="_blank" rel="noopener noreferrer" aria-label="Viber" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Phone className="h-6 w-6" /></a>
-            <a href="https://wa.me/639060669908" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><MessageCircle className="h-6 w-6" /></a>
           </div>
         </div>
       </header>
@@ -350,8 +348,6 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({ innerRef, id, children,
                 <a href="mailto:karl.lagman.dev@gmail.com" aria-label="Email" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Mail className="h-8 w-8" /></a>
                 <a href="https://www.linkedin.com/in/karl-anthony-lagman-9305b613a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Linkedin className="h-8 w-8" /></a>
                 <a href="https://github.com/karllagman" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Github className="h-8 w-8" /></a>
-                <a href="viber://chat?number=%2B639060669908" target="_blank" rel="noopener noreferrer" aria-label="Viber" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Phone className="h-8 w-8" /></a>
-                <a href="https://wa.me/639060669908" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><MessageCircle className="h-8 w-8" /></a>
               </div>
               <div className="mt-6 text-sm text-gray-300">
                 <a href="/karl_lagman_cv.pdf" target="_blank" rel="noopener noreferrer" className={pdfButtonStyle}>
