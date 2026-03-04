@@ -343,7 +343,6 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({ innerRef, id, children,
           <Card className="bg-gray-800 p-6">
             <CardContent className="text-center">
               <p>Email: <a className="text-cyan-400" href="mailto:karl.lagman.dev@gmail.com">karl.lagman.dev@gmail.com</a></p>
-              <p>Phone: +63 906 066 9908</p>
               <div className="flex justify-center items-center space-x-6 mt-4">
                 <a href="mailto:karl.lagman.dev@gmail.com" aria-label="Email" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Mail className="h-8 w-8" /></a>
                 <a href="https://www.linkedin.com/in/karl-anthony-lagman-9305b613a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={`text-cyan-400 hover:text-cyan-300 ${iconHover}`}><Linkedin className="h-8 w-8" /></a>
